@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    private Spawn[] _spawn;
+    [SerializeField] private Spawn[] _spawn;
 
     void Start()
     {
-        _spawn = FindObjectsOfType<Spawn>();
-
         StartCoroutine("SpawnEnemies");
     }
 
