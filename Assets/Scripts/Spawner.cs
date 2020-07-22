@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject _enemy;
 
     private Rigidbody2D _enemyRb2D;
 
 
-    void Awake()
+    private void Awake()
     {
         _enemyRb2D = _enemy.GetComponent<Rigidbody2D>();
     }
